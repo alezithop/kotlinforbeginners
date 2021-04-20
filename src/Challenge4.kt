@@ -3,7 +3,7 @@ Create a class representing a book. Every book has a title, an author, a publica
 A book can be borrowed from you or returned to you. In both cases, the borrowed property is updated accordingly. Also, a book should be able to print itself to the command line, including its title, author, and publication year.
  */
 
-class Book (val title: String, val author: String, val year: Int, var borrowed: Boolean ) {
+class Book2 (val title: String, val author: String, val year: Int, var borrowed: Boolean ) {
     init {
         println("Class initialized")
     }
@@ -36,7 +36,7 @@ class Book (val title: String, val author: String, val year: Int, var borrowed: 
 }
 
 fun main(args: Array<String>) {
-    val book = Book("Y colorin colorado este cuento aun no se ha acabado", "Odin Dupeyron", 2000, false)
+    val book = Book2("Y colorin colorado este cuento aun no se ha acabado", "Odin Dupeyron", 2000, false)
     book.bookInfo()
     book.borrowBook()
     book.borrowBook()
