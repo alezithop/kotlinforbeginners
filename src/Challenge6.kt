@@ -13,13 +13,16 @@ fun main(args: Array<String>) {
             ipCount.put(it, 1)
         }*/
     }
-    var maxIp = ipCount.keys.first()
+
+    // maxBy is deprecated use instead maxByOrNull
+    val (maxIp, maxCount) = ipCount.entries.maxByOrNull { it.value }!!
+    /*var maxIp = ipCount.keys.first()
     var maxCount = 0
     for ((ip, count) in ipCount.entries) {
         if (count > maxCount) {
             maxCount = count
             maxIp = ip
         }
-    }
+    }*/
     println("Most frequent IP address is $maxIp, which ocurred$maxCount times")
 }
