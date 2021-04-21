@@ -46,10 +46,6 @@ fun main(args: Array<String>) {
     printExploredWord(word, correctGuesses)
     println("\n#Wrong guesses: $fails \n\n")
     println("Well done")
-
-//    printExploredWord("Kotlin", mutableSetOf('o', 'l'))
-//    printExploredWord("Kotlin", mutableSetOf('k', 'o', 'l'))
-//    printExploredWord("Koltlin", mutableSetOf())
 }
 
 fun printExploredWord(word: String, correctGuesses: Set<Char>) {
